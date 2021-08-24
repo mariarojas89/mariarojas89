@@ -1,0 +1,593 @@
+@import "./parciales/variables";
+
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+ }
+ 
+ 
+ body{
+    background: $learning-background;
+    font-family: $landing-font-family;
+ }
+
+.nav-link{
+  color: white !important;
+  font-family: $landing-font-family !important; 
+  font-weight: lighter;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.nav-link:hover{
+  color: #6840a0 !important;
+  transition: all 0.5s ease;
+}
+
+.container-design0{
+  width: 200vh;
+  padding-left: 175px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.active{
+  color: #7630e6 !important;
+  font-weight: 505;  
+}
+
+
+
+
+    .container-learning1{
+      display: flex;
+      background-image:url(../assets/astroship-13.svg);
+      background-repeat: no-repeat;
+      background-position-x: 800px;
+      background-position-y: -25px;
+      background-size: 290px;
+      justify-content:space-between;
+      text-align: left;
+      justify-items: center;
+      color: $landing-font-color1;
+      line-height: 1.8;
+      font-family: $landing-font-family;
+      line-break: $landing-line-break;
+      
+            .continue-button{
+              display: inline-block;
+              background-color:#2a115228;
+              margin-left: 70px;
+              margin-top: 10px;
+              border:white;
+              border-style: solid;
+              border-width: 2px;
+              border-radius: 100px;
+              width: 120px;
+              height: 35px;
+              box-shadow: 0px 5px 10px rgba(0, 0, 2, 0.11);
+              
+          }
+          .continue-button a{
+            color:white;
+            text-decoration: none;
+           }
+
+           .continue-button:hover{
+              background-color: #3c2e4e;
+             }
+             
+
+
+        .learning-image1{
+            display: flex;
+            position:absolute;
+            width: 180vh;
+            top: 355px;
+            right: 25px;
+        }
+
+        .learning-image2{
+            display: flex;
+            position:absolute;
+            width: 280px;
+            top: 95px;
+            right: -35px;
+        }
+
+        .slide-top {
+            animation: slide-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+        }
+
+
+        @keyframes slide-top {
+            0% {
+            transform: translateY(30px);
+            }
+            100% {
+            transform: translateY(-80px);
+            }
+        }
+
+        .learning-image3{
+            display: flex;
+            position:absolute;
+            width: 460px;
+            top: 155px;
+            margin-left: -10px;
+            padding-right: 10px;
+        }
+
+        
+    }
+
+
+.design-middle{
+    display: flex;
+    background-image: $design-middle-background;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+
+    .design-tittle2{
+        font-weight: $landing-weight-tittles;
+        font-weight: lighter;
+        color: $landing-color-color2;
+        padding-top: 60px;
+        margin-top: -20px;
+        padding-bottom: 10px;
+        text-align: center;
+
+    }
+
+}
+
+.design-bottom{
+    display: grid;
+    flex-direction: column;
+    align-content:space-around;
+    background-image: $design-bottom-background;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: -60px;
+    padding-bottom: 120px;
+
+    .container-design3{
+        display: flex;
+        color: $landing-color-color5;
+        line-height: 1.4;
+        font-size: small;
+        font-family: $landing-font-family;
+        line-break: $landing-line-break;
+    }
+
+    .card{
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-around;
+        background-color:white;
+        border-radius: 15px;
+        overflow: hidden;
+        border: 0px;
+        box-shadow: 0px 5px 10px rgba(51, 42, 83, 0.123);
+
+        .card-body{
+            padding: 40px;
+            width: fit-content;
+            text-align: center;
+        }
+
+
+    }
+  }
+
+
+  .boton{
+        background-color: $landing-color-color3;
+        color: $landing-font-color1;
+        text-decoration: none;
+        font-family: $landing-font-family;
+        font-weight: $landing-weight-text;
+        font-size: 12px;
+        border-radius: 100px;
+        border: none;
+        width: 90px;
+        margin-top: 10px;
+        height: 25px;
+    }
+
+    .boton:hover{
+        background-color: $landing-color-color2;
+        
+    }
+
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  overflow: auto; 
+
+  .modal-body{
+      .video-setting{
+          display: flex;
+          width: 150vh;
+          align-content: center;
+  
+      }
+  }
+/////modal///////
+  .modal-content{  
+      animation-duration: 0.6s;
+      background-color: rgb(255, 255, 255);
+  }
+  .modal-title{
+      display: flex;
+      color: $landing-color-color5;
+      margin-left: 80px;
+      color: rgb(0, 0, 0);
+      font-family: $landing-font-family;
+      font-size: 15px;
+      font-weight: lighter;
+  }
+  .boton-cierra{
+      display:block;
+      margin-right: 80px;
+      border-radius: 100px;
+      color: $landing-font-color1;
+      font-family: $landing-font-family;
+      font-weight: $landing-weight-text;
+      font-size: $landing-buttons-font-size;
+      border: none;
+      background-color:$landing-color-color2;
+      width: 120px;
+      height: 35px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 2, 0.11);
+      
+  }
+
+  .boton-cierra:hover{
+      display: block;
+      margin-right: 80px;
+      border-radius: 100px;
+      color: $landing-font-color1;
+      font-family: $landing-font-family;
+      font-weight: $landing-weight-text;
+      font-size: $landing-buttons-font-size;
+      border: none;
+      background-color:$landing-color-color3;
+      width: 120px;
+      height: 35px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 2, 0.11);
+  }
+
+}
+
+
+/////lo que lleva el modal///////
+
+
+/*media Q*/
+@media only screen and (min-width: 425px) {
+  
+  .learning-top{
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: -10px;
+    height: 800px;
+  } 
+
+  .container-learning1{
+    display: flex;
+      text-align: center;
+      justify-items: center;
+      color: $landing-font-color1;
+      line-height: 1.8;
+      font-family: $landing-font-family;
+      line-break: $landing-line-break;
+  } 
+
+  .learning-tittle1{
+    display: flex;
+    font-size: 45px;
+    font-weight: bold;
+    color: $landing-font-color1;
+    margin-top: -350px;
+    margin-left: 55px;
+    margin-right: 55px;
+    text-align: center;
+  
+  }
+  
+  .learning-subtittle{
+    display: flex;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: $landing-weight-text;
+    color: $landing-color-color5;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: $landing-font-color1;
+    text-align: center;
+    }
+
+    #cont-btn{
+      display: none;
+      overflow: hidden;
+    }
+
+  
+  .learning-image1{
+    margin-top: 483px;
+      padding-top: 0px;
+      padding-left: 50px;
+  }
+  
+  .learning-image2{
+    display: flex;
+    position:relative;
+    padding:25px;
+    width: 180px;
+    margin-top: 500px;
+    margin-right: 130px;
+}
+
+
+  .learning-image3{
+    width: 30px;
+    margin-top: 450px;
+    margin-right: 150px;
+    left: -40px;
+    padding: 150px;
+  }
+
+  .design-middle{
+    display: grid;
+    background-image: $design-middle-background;
+    margin-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .design-bottom{
+    display: grid;
+    flex-direction: column;
+    align-content:space-around;
+    background-image: $design-bottom-background;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: -60px;
+    padding-bottom: 120px;
+  }
+  
+
+}
+
+@media only screen and (min-width: 768px) {
+  .learning-top{
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: -10px;
+    height: 800px;
+  } 
+
+  .container-learning1{
+    display: flex;
+      text-align: center;
+      justify-items: center;
+      color: $landing-font-color1;
+      line-height: 1.8;
+      font-family: $landing-font-family;
+      line-break: $landing-line-break;
+  } 
+
+  .learning-tittle1{
+    display: flex;
+    font-size: 65px;
+    font-weight: bold;
+    color: $landing-font-color1;
+    margin-top: -350px;
+    margin-left: 25px;
+    margin-right: 0px;
+    text-align: center;
+  
+  }
+  
+  .learning-subtittle{
+    display: flex;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: $landing-weight-text;
+    color: $landing-color-color5;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 0px;
+    color: $landing-font-color1;
+    text-align: center;
+    }
+
+    #cont-btn{
+      display: none;
+      overflow: hidden;
+    }
+
+  
+  .learning-image1{
+    margin-top: 483px;
+      padding-top: 0px;
+      padding-left: 50px;
+  }
+  
+  .learning-image2{
+    display: flex;
+    position:relative;
+    padding:25px;
+    width: 180px;
+    margin-top: 500px;
+    margin-right: 130px;
+}
+
+
+  .learning-image3{
+    width: 80px;
+    margin-top: 450px;
+    margin-right: 150px;
+    left: 60px;
+    padding: 20px;
+  }
+
+  .design-middle{
+    display: grid;
+    background-image: $design-middle-background;
+    margin-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .design-bottom{
+    display: grid;
+    flex-direction: column;
+    align-content:space-around;
+    background-image: $design-bottom-background;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: -60px;
+    padding-bottom: 120px;
+  }
+  
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .learning-top{
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    height: 650px;
+  } 
+
+  .container-learning1{
+    display: flex;
+      background-image:url(../assets/astroship-13.svg);
+      background-repeat: no-repeat;
+      background-position-x: 800px;
+      background-position-y: -25px;
+      background-size: 290px;
+      justify-content:space-between;
+      text-align: left;
+      justify-items: center;
+      color: $landing-font-color1;
+      line-height: 1.8;
+      font-family: $landing-font-family;
+      line-break: $landing-line-break;
+  } 
+
+  .learning-tittle1{
+    display: flex;
+    position: relative;
+    font-size: 65px;
+    font-weight: bold;
+    color: $landing-font-color1;
+    margin-top: -50px;
+    margin-left: 70px;
+    text-align: left;
+  
+  }
+  
+  .learning-subtittle{
+    display: flex;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: $landing-weight-text;
+    color: $landing-color-color5;
+    margin-top: 10px;
+    margin-left: 75px;
+    color: $landing-font-color1;
+    text-align: left;
+    }
+
+    #cont-btn{
+      display: inline-block;
+      overflow: visible;
+    }
+
+  
+  .learning-image1{
+      margin-top: 300px;
+      padding-top: 0px;
+      padding-left: 0px;
+  }
+  
+
+  .learning-image2{
+    display: flex;
+    position:relative;
+    padding:30px;
+    width: 280px;
+    margin-top: 305px;
+    margin-right: 105px;
+  }
+
+  .learning-image3{
+    width: 60px;
+    margin-top: 300px;
+    left: 900px;
+    padding: 0px;
+  }
+
+  .design-middle{
+    display: flex;
+    margin-top: 0px;
+    background-image: $design-middle-background;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .design-bottom{
+    display: grid;
+    flex-direction: column;
+    align-content:space-around;
+    background-image: $design-bottom-background;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: -60px;
+    padding-bottom: 120px;
+  }
+  
+
+}
